@@ -4,14 +4,14 @@ import { wrtieTypoonInfos } from './modules/write/writeTyphoonInfo'
 import { getFileNamePrefix } from './utils/getCurrentTime'
 
 async function update() {
-  const data = await getHTML()
-  const typhoonInfos = parseTable(data)
-  const prefix = getFileNamePrefix()
-  wrtieTypoonInfos(`output/${prefix}.txt`, typhoonInfos)
+    const data = await getHTML()
+    const typhoonInfos = parseTable(data)
+    const prefix = getFileNamePrefix()
+    wrtieTypoonInfos(`output/${prefix}.txt`, typhoonInfos)
 }
 
 function main() {
-  const intervalTime = 1000 * 60 * 5 // 5분
-  setInterval(update, intervalTime)
+    const intervalTime = 1000 * 10 // 5분
+    setInterval(update, intervalTime)
 }
 main()
