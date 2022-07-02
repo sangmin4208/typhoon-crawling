@@ -1,4 +1,3 @@
-import { load } from 'cheerio'
 import { axiosInstance } from '../../../utils/axiosInstance'
 
 const axios = axiosInstance
