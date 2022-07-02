@@ -11,7 +11,7 @@ async function update() {
 }
 
 function main() {
-  const intervalTime = 1000 * 5
+  const intervalTime = 1000 * 60 * 5 // 5분
   setInterval(update, intervalTime)
 }
 main()
